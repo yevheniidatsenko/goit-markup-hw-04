@@ -94,7 +94,7 @@ button {
 .header-page {
   border-bottom: 1px solid var(--color-cornflower);
   padding: 24px 0;
-  box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08),
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
@@ -533,6 +533,7 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--color-white);
   margin-bottom: 16px;
 }
@@ -629,11 +630,9 @@ button {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.product-link:hover
-  .product-oveley-text
-  .product-link:focus
-  .product-oveley-text {
-  transform: translateY(0);
+.product-link:hover .product-oveley-text,
+.product-link:focus .product-oveley-text {
+  transform: translateY(0%);
 }
 
 .product-overley-cover {
@@ -716,7 +715,7 @@ button {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__button-close {
+.modal-button-close {
   padding: 0;
   position: absolute;
   top: 24px;
@@ -733,19 +732,19 @@ button {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__button-close:hover,
-.modal__button-close:focus {
+.modal-button-close:hover,
+.modal-button-close:focus {
   background-color: var(--color-ocean);
   border: none;
   fill: var(--color-white);
 }
 
-.modal__icon-close {
+.modal-icon-close {
   fill: var(--primary-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__button-close:hover .modal__icon-close,
-.modal__button-close:focus .modal__icon-close {
+.modal-button-close:hover:hover .modal-icon-close,
+.modal-button-close:focus:focus .modal-icon-close {
   fill: var(--color-white);
 }
